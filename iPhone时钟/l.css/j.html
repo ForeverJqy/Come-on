@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    
+
+   
+</head>
+
+<body>
+    <div class="pikaqiu">
+        <!-- 额头 -->
+        <div class="forehead center"></div>
+        <!-- 脸部轮廓及腮红 -->
+        <div class="face center">
+            <div class="blush"></div>
+            <div class="blush right"></div>
+        </div>
+        <!-- 耳朵 -->
+        <div class="ear">
+            <div class="top"></div>
+        </div>
+        <div class="ear right">
+            <div class="top"></div>
+        </div>
+        <!-- 眼睛 -->
+        <div class="eye">
+            <div class="eyeball"></div>
+        </div>
+        <div class="eye right">
+            <div class="eyeball right"></div>
+        </div>
+        <!-- 鼻子 -->
+        <div class="nose"></div>
+        <!-- 嘴巴 -->
+        <div class="mouth"></div>
+        <div class="mouth right"></div>
+        <!-- 身体 -->
+        <div class="body"></div>
+        <!-- 胳膊 -->
+        <div class="arm"></div>
+        <div class="arm right"></div>
+        <!-- 腿部 -->
+        <div class="leg"></div>
+        <div class="leg right"></div>
+        <!-- 尾巴 -->
+        <div class="tail">
+            <div class="bottom"></div>
+            <div class="middle"></div>
+            <div class="top"></div>
+        </div>
+    </div>
+</body>
+<style type="text/css">
+    .pikaqiu{
+        margin: 10% 45%;
+    }
+    .center{
+        margin: 0 auto;
+    }
+    .forehead{
+        width: 100px;
+        height: 65px;
+        background-color: yellow;
+        border: 1px solid #000;
+        border-bottom: none;
+        border-radius: 40px/45px 45px 20px 20px;
+    }
+    .face{
+        width: 107px;
+        height: 60px;
+        background-color: yellow;
+        border: 1px solid #000;
+        border-top: none;
+        border-bottom: none;
+        border-radius: 90px/120px;
+        transform: translate(0px,-25px);
+        -webkit-transform: translate(0px,-25px);
+    }
+    .ear{
+        width: 30px;
+        height: 80px;
+        position: absolute;
+        background-color: yellow;
+        border-radius: 30px/0px 80px 0px 80px;
+        transform: translate(5px,-170px) rotate(-15deg);
+        -webkit-transform: translate(5px,-170px) rotate(-15deg);
+    }
+    .ear.right{
+        transform: scale(-1,1) translate(-90px, -170px) rotate(-15deg);
+        -webkit-transform: scale(-1,1) translate(-90px, -170px) rotate(-15deg);
+    }
+    .ear>.top{
+        width: 18px;
+        height: 20px;
+        background-color: #5f5f50;
+        position: absolute;
+        z-index: -1;
+        border-radius: 30px/60px 60px 0px 0px;
+        transform: translate(-2px,-5px) rotate(-15deg);
+        -webkit-transform: translate(-2px,-5px) rotate(-15deg);
+    }
+    
+    .eye{
+        width: 15px;
+        height: 15px;
+        position: absolute;
+        border-radius: 15px;
+        background-color: #000000;
+        transform: translate(35px,-90px);
+        -webkit-transform: translate(35px,-90px);
+    }
+    .eye.right{
+        transform: scale(-1,1) translate(-83px,-90px);
+        -webkit-transform: scale(-1,1) translate(-83px,-90px);
+    }
+    .eyeball{
+        width: 8px;
+        height: 8px;
+        border-radius: 6px;
+        position: absolute;
+        z-index: 2;
+        background-color: white;
+        transform: translate(4px,1px);
+        -webkit-transform: translate(4px,1px);
+    }
+    .eyeball.right{
+        transform: scale(-1,1) translate(-3px,1px);
+        -webkit-transform: scale(-1,1) translate(-3px,1px);
+    }
+    .blush{
+        width: 25px;
+        height: 30px;
+        border-radius: 25px 25px 30px 25px;
+        position: absolute;
+        background-color: orangered;
+        transform: translate(0px,14px);
+        -webkit-transform: translate(0px,14px);
+    }
+    .blush.right{
+        transform: scale(-1,1) translate(-85px,14px);
+        -webkit-transform: scale(-1,1) translate(-85px,14px);
+    }
+    .nose{
+        width: 3px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #000000;
+        transform: translate(65px,-63px);
+        -webkit-transform: translate(65px,-63px);
+    }
+    .mouth{
+        width: 20px;
+        height: 10px;
+        position: absolute;
+        border-radius: 0px 30px 30px 30px;
+        border-bottom: 2px solid #000;
+        transform: translate(47px,-63px);
+        -webkit-transform: translate(47px,-63px);
+    }
+    .mouth.right{
+        transform: scale(-1,1) translate(-65px,-63px);
+        -webkit-transform: scale(-1,1) translate(-65px,-63px);
+    }
+    .body{
+        width: 100px;
+        height: 80px;
+        position: absolute;
+        z-index: -1;
+        background-color: yellow;
+        border: 1px solid #000;
+        /* border-bottom: none; */
+        border-top: none;
+        border-radius: 20px/50px 50px 30px 30px;
+        transform: translate(0px,-35px);
+        -webkit-transform: translate(15px,-35px);
+    }
+
+    
+.arm{
+        width: 40px;
+        height: 15px;
+        border: 1px solid #000;
+        border-left: none;
+        border-radius: 10px/10px 5px;
+        transform: translate(25px,-15px) rotate(20deg);
+        -webkit-transform: translate(25px,-15px) rotate(20deg);
+    }
+    .arm.right{
+        transform: scale(-1,1) translate(-68px,-32px) rotate(20deg);
+        -webkit-transform: scale(-1,1) translate(-68px,-32px) rotate(20deg);
+    }
+    .leg{
+        width: 20px;
+        height: 15px;
+        border: 1px solid #000;
+        border-left: none;
+        position: absolute;
+        z-index: -2;
+        background-color: yellow;
+        border-radius: 10px/10px 5px;
+        transform: translate(30px,10px) rotate(90deg);
+        -webkit-transform: translate(30px,10px) rotate(90deg);
+    }
+    .leg.right{
+        transform: scale(-1,1) translate(-83px,10px) rotate(90deg);
+        -webkit-transform: scale(-1,1) translate(-83px,10px) rotate(90deg);
+    }
+    .tail{
+        animation: tail 1s ease-in-out infinite;
+        -webkit-animation: tail 1s ease-in-out infinite;
+    }
+
+    .tail>.bottom{
+        width: 40px;
+        height: 20px;
+        border-bottom: 1px solid #000;
+        position: absolute;
+        z-index: -2;
+        background-color: yellow;
+        transform: translate(105px,-25px) rotate(-20deg);
+        -webkit-transform: translate(105px,-25px) rotate(-20deg);
+    }
+    .tail>.middle{
+        width: 50px;
+        height: 20px;
+        border: 1px solid #000;
+        border-left: none;
+        border-right: none;
+        position: absolute;
+        z-index: -3;
+        background-color: yellow;
+        transform: translate(104px,-42px) rotate(70deg);
+        -webkit-transform: translate(104px,-42px) rotate(70deg);
+    }
+    .tail>.top{
+            width: 70px;
+            height: 40px;
+            border: 1px solid #000;
+            position: absolute;
+            z-index: -4;
+            background-color: yellow;
+            transform:  translate(109px,-92px) rotate(-10deg);
+            -webkit-transform: translate(109px,-92px) rotate(-10deg);
+        }
+        .tail>.bottom{
+        width: 40px;
+        height: 20px;
+        border-bottom: 1px solid #000;
+        position: absolute;
+        z-index: -2;
+        background-color: yellow;
+        transform: translate(105px,-25px) rotate(-20deg);
+        -webkit-transform: translate(105px,-25px) rotate(-20deg);
+    }
+    .tail>.middle{
+        width: 50px;
+        height: 20px;
+        border: 1px solid #000;
+        border-left: none;
+        border-right: none;
+        position: absolute;
+        z-index: -3;
+        background-color: yellow;
+        transform: translate(104px,-42px) rotate(70deg);
+        -webkit-transform: translate(104px,-42px) rotate(70deg);
+    }
+    .tail>.top{
+            width: 70px;
+            height: 40px;
+            border: 1px solid #000;
+            position: absolute;
+            z-index: -4;
+            background-color: yellow;
+            transform:  translate(109px,-92px) rotate(-10deg);
+            -webkit-transform: translate(109px,-92px) rotate(-10deg);
+        }
+        @keyframes tail{
+            from{
+                transform: translate(0px,0px);
+                -webkit-transform: translate(0px,0px);
+            }
+            to{
+                transform: translate(0px,3px);
+                -webkit-transform: translate(0px,3px);
+                }
+        }
+</style>
+</html>
+        

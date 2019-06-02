@@ -1,0 +1,64 @@
+body,ul,li,a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+.cointer {
+    position: relative;
+    width: 520px;
+    height: 280px;
+    border: 1px solid #000;
+    margin: 100px auto;
+    overflow: hidden;
+}
+.main {
+    position: absolute;
+    left: -520px;
+    width: 3640px;
+    height: 280px;
+    font-size: 0;
+}
+.list {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -35px;/*一个li的宽度是14，14*5=70/2=350*/
+    font-size: 0;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 7px; 
+}
+.list li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ccc;
+    margin: 3px;
+    cursor: pointer;
+}
+.list .active {
+    background: orangered;
+}
+.btn {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px; 
+    color: #fff;
+    background: rgba(0, 0, 0, 0.3);
+    line-height: 40px;
+    text-align: center;
+}
+.cointer:hover .btn {
+    display: inline-block;
+}
+#zou {
+    left: 0;
+}
+#you {
+    right: 0;
+}
